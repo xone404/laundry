@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syklin_apps/pages/home_screen.dart';
+import 'package:syklin_apps/pages/pesanan_screen.dart';
 import 'package:syklin_apps/themes/colors.dart';
 
 class BottomNav extends StatefulWidget {
@@ -11,7 +12,7 @@ class BottomNav extends StatefulWidget {
 
 class _BottomNavState extends State<BottomNav> {
   int selectedIndex = 0;
-  static final List<Widget> screenList = [HomeScreen()];
+  static final List<Widget> screenList = [HomeScreen(), LaundryOrderScreen()];
 
   void onItemTapped(int index) {
     setState(() {
